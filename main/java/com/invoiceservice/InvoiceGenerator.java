@@ -26,4 +26,6 @@ This overloaded method calculates total fare for multiple rides
         }
         return totalFare;
     }
+
+
 }
