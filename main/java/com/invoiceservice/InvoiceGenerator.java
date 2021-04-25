@@ -1,7 +1,14 @@
 package com.invoiceservice;
 
 public class InvoiceGenerator {
-    public static void main(String[] args) {
-        System.out.println("Welcome in invoice generator");
+    private static final int  COST_PER_TIME = 1;
+    private static final double MINIMUM_COST_PER_KILOMETER = 10;
+
+/*
+This method will return total fare based on
+parameters distance and time
+ */
+    public double calculateFare(double distance, int time) {
+        return distance * MINIMUM_COST_PER_KILOMETER + time * COST_PER_TIME;
     }
 }
